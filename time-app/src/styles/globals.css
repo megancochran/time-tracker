@@ -23,13 +23,13 @@
     @apply text-[18px]/[22px];
     @apply font-[300];
   }
-  button {
+  /* button {
     @apply h-14 w-48 rounded font-bold;
     @apply bg-blue-200 text-grey-800;
     @apply font-sans;
     @apply text-[18px]/[22px];
     @apply font-[700];
-  }
+  } */
 }
 
 html,
