@@ -15,7 +15,7 @@
   }
   h3 {
     @apply font-sans;
-    @apply text-[26px]/[30px];
+    @apply text-[18px]/[30px];
     @apply font-[700];
   }
   p {
