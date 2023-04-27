@@ -3,13 +3,13 @@ import { useState } from "react";
 export default function Home() {
   const [isSessionActive, setIsSessionActive] = useState(false);
   const handleStartSessionClick = () => {
-    setIsSessionActive(true)
-  }
+    setIsSessionActive(true);
+  };
   if (!isSessionActive)
     return (
       <div className="flex h-screen min-w-full flex-col flex-wrap content-center justify-center gap-y-8 bg-white">
         <h1 className="text-grey-800">00:00:00</h1>
-        <button on className="h-12 w-40 self-center rounded-md bg-blue-200 text-grey-800">
+        <button className="h-12 w-40 self-center rounded-md bg-blue-200 text-grey-800">
           <h3>Start Session</h3>
         </button>
       </div>
