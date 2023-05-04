@@ -58,7 +58,7 @@ export default function Home() {
 
         <label
           htmlFor="my-modal"
-          className="btn h-12 w-20 self-center rounded-md bg-grey-200 text-grey-800"
+          className="btn h-12 w-20 self-center rounded-md border-none bg-grey-200 text-grey-800"
         >
           <div>
             <svg
@@ -88,13 +88,13 @@ export default function Home() {
               <div className="flex w-full flex-wrap gap-2">
                 <label
                   htmlFor="my-modal"
-                  className="btn h-12 w-40 w-full self-center rounded-md border-none bg-blue-200 normal-case text-grey-800"
+                  className="btn h-12 w-full self-center rounded-md border-none bg-blue-200 normal-case text-grey-800"
                 >
                   End Session
                 </label>
                 <label
                   htmlFor="my-modal"
-                  className="btn h-12 w-40 w-full self-center rounded-md border-none bg-grey-200 normal-case text-grey-800"
+                  className="btn h-12 w-full self-center rounded-md border-none bg-grey-200 normal-case text-grey-800"
                 >
                   Cancel
                 </label>
@@ -110,9 +110,9 @@ export default function Home() {
     return (
       <div className="flex h-screen min-w-full flex-col flex-wrap content-center justify-center gap-y-8 bg-white">
         <h1 className="text-grey-800">00:00:00</h1>
-        <button
+        <label
           onClick={handlePlaySessionClick}
-          className="h-12 w-20 justify-items-center self-center rounded-md bg-blue-200 text-grey-800"
+          className="btn h-12 w-20 justify-items-center self-center border-none rounded-md bg-blue-200 text-grey-800"
         >
           <div className="flex max-w-full justify-self-center">
             <svg
@@ -128,10 +128,10 @@ export default function Home() {
               />
             </svg>
           </div>
-        </button>
+        </label>
         <label
           htmlFor="my-modal"
-          className="btn h-12 w-20 self-center rounded-md bg-grey-200 text-grey-800"
+          className="btn h-12 w-20 self-center rounded-md border-none bg-grey-200 text-grey-800"
         >
           <div>
             <svg
