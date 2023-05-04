@@ -51,7 +51,10 @@ export default function Home() {
             </svg>
           </div>
         </button>
-        <button className="h-12 w-20 self-center rounded-md bg-grey-200 text-grey-800">
+        <label
+          htmlFor="my-modal"
+          className="btn h-12 w-20 self-center rounded-md bg-grey-200 text-grey-800"
+        >
           <div>
             <svg
               width="16"
@@ -66,7 +69,7 @@ export default function Home() {
               />
             </svg>
           </div>
-        </button>
+        </label>
       </div>
     );
   if (isSessionActive && isSessionPaused)
@@ -108,9 +111,7 @@ export default function Home() {
             </svg>
           </div>
         </button>
-        <label htmlFor="my-modal" className="btn">
-          open modal
-        </label>
+
         <input type="checkbox" id="my-modal" className="modal-toggle" />
         <div className="modal">
           <div className="modal-box bg-white">
@@ -120,13 +121,19 @@ export default function Home() {
               summary?
             </p>
             <div className="modal-action">
-              <div className="flex flex-wrap gap-2 w-full">
-              <label htmlFor="my-modal" className="btn h-12 w-40 self-center rounded-md bg-blue-200 text-grey-800 border-none normal-case w-full">
-                End Session
-              </label>
-              <label htmlFor="my-modal" className="btn h-12 w-40 self-center rounded-md bg-grey-200 text-grey-800 border-none normal-case w-full">
-                Cancel
-              </label>
+              <div className="flex w-full flex-wrap gap-2">
+                <label
+                  htmlFor="my-modal"
+                  className="btn h-12 w-40 w-full self-center rounded-md border-none bg-blue-200 normal-case text-grey-800"
+                >
+                  End Session
+                </label>
+                <label
+                  htmlFor="my-modal"
+                  className="btn h-12 w-40 w-full self-center rounded-md border-none bg-grey-200 normal-case text-grey-800"
+                >
+                  Cancel
+                </label>
               </div>
             </div>
           </div>
